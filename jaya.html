@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+
+
+        header {
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        .nav {
+            width: 100vw;
+            height: 10vh;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+        }
+
+        nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;   
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: medium;
+            padding: 5px 10px;
+            border-radius: 15px;
+            background-color: rgba(57, 162, 162, 0.471);
+        }
+        nav a:hover{
+            background-color: rgba(57, 162, 162, 0.295) ;
+        }
+
+        .namelogo {
+            font-size: x-large;
+            font-weight: bold;
+            font-family: cursive;
+
+        }
+
+        .logo {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+            padding: 10px;
+            background-color: rgba(56, 227, 227, 0.345);
+            border-radius: 50px;
+
+        }
+
+        .about {
+            width: 70vw;
+            margin: auto;
+        }
+
+        #home {
+            width: 80vw;
+            min-height: 50vh;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+
+
+        }
+
+        .h1 {
+            color: rgb(57, 162, 162);
+            font-size: 50px;
+            font-weight: bolder;
+
+        }
+
+        #home p {
+            font-size: 30px;
+        }
+
+
+
+        .side1 {
+            width: 50%;
+        }
+
+        .justify {
+            text-align: justify;
+
+        }
+
+        .side2 {
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .side2 img {
+            max-width: 80%;
+
+            max-height: 100%;
+
+            object-fit: contain;
+            filter: drop-shadow(0px 0px 16px black);
+
+
+
+        }
+
+        .seperator {
+            height: 4px;
+            background-color: rgba(57, 162, 162, 0.471);
+            width: 90vw;
+            margin: auto;
+        }
+
+        #about {
+            width: 80vw;
+            min-height: 50vh;
+            margin: auto;
+            margin-top: 50px;
+            text-align: justify;
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .me {
+            width: 50%;
+        }
+
+        .education {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            font: bold;
+
+
+        }
+        .school:hover{
+            background-color: rgba(57, 162, 162, 0.295);
+        }
+        .inter:hover{
+background-color:rgba(57, 162, 162, 0.295) ;
+        }
+        .college:hover{
+background-color:rgba(57, 162, 162, 0.295) ;
+        }
+
+        .heading {
+            color: black;
+            font-size: xx-large;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .education div {
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(57, 162, 162, 0.471);
+        }
+        #project{
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #projects {
+           
+            width: 70vw;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           gap: 20px;
+           text-align: justify;
+        
+        }
+        .project1{
+            
+            background-color: rgba(57, 162, 162, 0.471);
+            padding: 50px;
+            border-radius: 10px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .project2{
+            
+            background-color: rgba(57, 162, 162, 0.471);
+            padding: 50px;
+            border-radius: 10px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact{
+            height: 100vh;
+        }
+        .contact-form{
+            height: 50vh;
+            width: 50vw;
+            margin: 100px auto 100px auto;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: rgba(57, 162, 162, 0.471);
+            
+        }
+        #name{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        #email{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        #message{
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+        }
+        button{
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px; 
+            text-align: center;
+        }
+        .project1:hover{
+            background-color: rgba(57, 162, 162, 0.295);
+        }
+        .project2:hover{
+            background-color: rgba(57, 162, 162, 0.295);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="namelogo typing-animation">
+                
+                JAYASRI NADIVINTI
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="side1">
+            <h1 class="h1 "> Hi, I'am Jayasri.</h1>
+            <p>Programmer & web Developer</p>
+            <div class="justify">"I am a final year Computer Science Engineering student with a strong foundation in
+                problem-solving,
+                Python programming, and web development. Throughout my academic journey, I have honed my skills in these
+                areas by working on various projects and challenges. My passion for technology drives me to continually
+                learn and apply my knowledge to real-world scenarios. I am committed to building efficient and
+                innovative solutions, and I am eager to contribute my expertise to the field of software development."
+            </div>
+
+        </div>
+        <div class="side2">
+            <img src="image1.png" alt="" srcset="">
+        </div>
+
+
+
+
+    </section>
+    <div class="seperator">
+
+    </div>
+    <section id="about">
+        <div class="me">
+            I am a passionate programmer and aspiring web developer, with a solid foundation in Python, MySQL, and web development technologies. I enjoy tackling complex challenges and turning them into effective, user-friendly solutions. My expertise lies in crafting digital experiences that are not only functional but also intuitive and engaging for end users.
+<br>
+In addition to my technical skills, I have a fundamental understanding of Machine Learning and Deep Learning, which allows me to work with data-driven solutions. I excel at simplifying complex data, making it accessible and comprehensible to diverse audiences. My strong problem-solving abilities and collaborative mindset help me contribute effectively in team environments.
+<br>
+Driven by a passion for continuous learning and innovation, I am always looking for new ways to enhance my skill set and stay at the forefront of software development. I am committed to delivering scalable and high-quality solutions that are tailored to the specific needs of every project.
+        </div>
+        <div class="education">
+            <h2 class="heading">Education</h2>
+            <div class="school">
+                <h3>Senior Secondary Education
+                </h3>
+                <h4>TIRUMALA High School</h4>
+                <h5>GPA:10</h5>
+            </div>
+            <div class="inter">
+                <h3> Higher Secondary Education
+                </h3>
+                <h4>TIRUMALA JUNIOR COLLEGE</h4>
+                <h5>Marks:940</h5>
+            </div>
+            <div class="college">
+                <h3>Bachelor of technology/CSE
+                </h3>
+                <h4>VIGNAN UNIVERSITY</h4>
+                <h5>CGPA:7.6</h5>
+            </div>
+        </div>
+    </section>
+    <div class="seperator">
+
+    </div>
+    
+    
+    <section id="project">
+        <h1>MY  Latest projects</h1>
+        <section id="projects">
+            <div class="project1">
+                <img src="img2.png" alt="" srcset="">
+                <h2>Air Character Recognition</h2>
+                Developed a Air Character Recognition (ACR) system using a CNN-based model, achieving 99% accuracy in identifying cahracters from sensor board, significantly enhancing human-computer interaction. 
+                thsi project contains different gestures to write the alphabet,to stop,or to pause.BY using these gestures we have to write the aplhabet. This project demonstrates the integration of diverse data and sophisticated machine learning techniques. 
+                It contributes to more accurate caharacter recognition, enabling smoother and more effective interactions between humans and computers.
+    
+            </div>
+            <div class="project2">
+                <img src="img3.png" alt="" srcset="">
+                <h2>Car Sales Price Prediction</h2>
+                Developed a car price prediction model using machine learning techniques, including Gradient Boosting, CatBoost, Voting Regressor, and Ridge Regression, to provide accurate forecasts.
+                 Through feature engineering and analyzing key factors like brand, fuel type, and mileage, we improved prediction accuracy. The results offer valuable insights for car manufacturers and dealerships to optimize strategies and stay competitive. 
+                 This research contributes to the growing field of machine learning analytics in the automotive industry.
+                 It aids in informed decision-making and fosters innovation within the market.
+               
+            </div>
+        </section>
+        
+
+    </section>
+    <div class="seperator">
+
+    </div>
+    <section id="contact">
+    
+        <div class="contact-form">
+            
+            <form action="/submit-form" method="post">
+                <h1>Contact Me</h1>
+                <div>
+                    <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email : </label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                </div>
+                <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+                
+        
+        
+               
+        
+               
+            </form>
+        </div>
+
+    </section>
+    <div class="seperator">
+
+    </div>
+
+
+
+</body>
+
+</html>
